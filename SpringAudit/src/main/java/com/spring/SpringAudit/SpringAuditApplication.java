@@ -26,7 +26,7 @@ public class SpringAuditApplication {
 		Book book = repository.findById(id).get();
 		book.setPages(pages);
 		repository.save(book);
-		return "nook updated";
+		return "book updated";
 	}
 
 	@DeleteMapping("/delete/{id}")
